@@ -13,10 +13,14 @@ public class App
     {
         System.out.println( "Hello World!" );
         ApplicationContext context=new ClassPathXmlApplicationContext("setterdemo.xml");
+        
         company ob1=(company) context.getBean("s1");
         company ob2=(company) context.getBean("s2");
-       
+        company ob3=(company) context.getBean("s3");
+        
         System.out.println(ob1);
         System.out.println(ob2);
+        System.out.println(ob3);
+        
     }
 }
