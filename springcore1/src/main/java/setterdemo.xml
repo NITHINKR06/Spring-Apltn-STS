@@ -16,24 +16,32 @@ http://www.springframework.org/schema/context
 
 http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean id="s1" class="com.springcore1.company">
 
-<constructor-arg type="int" value="10" />
+<!-- Constructor -->
 
-<constructor-arg value="bangalore" type="String" />
+<bean name="s1" class="com.springcore1.company">
+
+<constructor-arg  value="10" />
+<constructor-arg value="bangalore"  />
+
+</bean>
+
+<bean name="s2" class="com.springcore1.company">
+
+<constructor-arg value="100" />
+<constructor-arg value="mangalore" />
 
 </bean>
 
-<bean id="s2" class="com.springcore1.company">
 
-<constructor-arg value="100" type="int">
+<!-- Property -->
 
-</constructor-arg>
-
-<constructor-arg value="mangalore" type="String">
-
-</constructor-arg>
+<bean name="s3" class="com.springcore1.company">
+	
+<property name= "companyId" value="10" />
+<property name= "companyAddress" value="bangalore"  />
 
 </bean>
+
 
 </beans>
